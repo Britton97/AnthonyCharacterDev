@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ArmMesh.ma
-//Last modified: Thu, Jan 21, 2021 12:42:02 PM
+//Last modified: Thu, Jan 21, 2021 12:42:56 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -14,17 +14,17 @@ fileInfo "osv" "Mac OS X 10.16";
 createNode transform -s -n "persp";
 	rename -uid "82F5B627-6849-E37E-94C9-E19441C0B030";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 8.7448375892577133 13.63016167381134 14.175604552990936 ;
-	setAttr ".r" -type "double3" 356.06164726151462 -2115.8000003917455 359.9999999994335 ;
+	setAttr ".t" -type "double3" 11.587539558365952 23.126600800548324 5.9590271487159754 ;
+	setAttr ".r" -type "double3" 315.86164726190492 -2096.6000003914387 360.00000000000114 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3158F1B9-5F43-5636-6CEE-428460FB517A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 12.244962077729435;
+	setAttr ".coi" 17.104071473934201;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -6.0252164602279663 9.9282142149583379 0.6118740439414978 ;
+	setAttr ".tp" -type "double3" 0.61187398433685303 11.215439319610596 0.46282315254211426 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "4986D111-164C-9049-887A-E5B9F54C88B1";
@@ -4777,6 +4777,7 @@ createNode joint -n "R_Roller_J1" -p "R_Elbow_J";
 	setAttr ".uoc" 1;
 	setAttr ".oc" 2;
 	setAttr ".t" -type "double3" 2.8070680545212801 -4.6636650268478858e-18 -2.4799786718947918e-15 ;
+	setAttr ".r" -type "double3" 35 0 0 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 -7.9513867036587919e-16 0 ;
@@ -4789,7 +4790,7 @@ createNode joint -n "R_Wrist_J" -p "R_Roller_J1";
 	setAttr ".uoc" 1;
 	setAttr ".oc" 3;
 	setAttr ".t" -type "double3" 1.7573182382502694 5.392421806391795e-15 1.2339779263507998e-15 ;
-	setAttr ".r" -type "double3" 0 0 55 ;
+	setAttr ".r" -type "double3" 55 0 55 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 -4.9999999999999689 0 ;
